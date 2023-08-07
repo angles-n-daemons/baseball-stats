@@ -39,6 +39,14 @@
 
 .player-select {
     width: 30%;
+    min-width: 150px;
+    max-width: 600px;
+
     color: black;
     font-size: 16px;
+    padding: 20px;
+}
+
+.stat-graph {
+    width: 60%;
 }

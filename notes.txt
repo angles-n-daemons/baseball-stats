@@ -110,3 +110,34 @@ https://stackoverflow.com/a/58611126
 
 Got the csv parsing effectively
 
+Now I'd like to add two components:
+
+the first will be a typeahead to search for players
+
+The first will be a graph, which should take all the data 
+
+Before I do this, I need to prune out duplicate player locations
+
+Time @ 3:50
+
+Going to add the select component to the page
+
+https://react-select.com/home
+
+https://stackoverflow.com/questions/53243203/react-hook-useeffect-runs-continuously-forever-infinite-loop
+
+Got the select working
+
+Need to do a first graph @ 2:10
+
+Looks like I'm going to use react-chartjs-2
+
+I'd like to do an area chart
+
+
+https://stackoverflow.com/questions/67727603/error-category-is-not-a-registered-scale
+
+Okay so a few different issues:
+
+1. The width issue of react-chart-js doesn't allow me to resize this application
+2. There isn't a clear way to limit the ticks at the onset

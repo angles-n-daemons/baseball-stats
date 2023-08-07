@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import PlayerSelect from './components/PlayerSelect.js'
+import StatGraph from './components/StatGraph.js'
 import { binaryToStats } from './utils.js';
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
+                <div>MLB Player Catalog</div>
                 <PlayerSelect stats={stats}/>
+                <StatGraph stats={stats}/>
             </header>
         </div>
     );
