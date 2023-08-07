@@ -100,4 +100,13 @@ RFC4180 - compliant
 
 Interestingly enough, if the csv parsing script is loaded, the rest of the application fails
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+
+Hmm, seems like the parser isn't working
+
+I'll try a different library papaparse
+
+https://stackoverflow.com/a/58611126
+
+Got the csv parsing effectively
 

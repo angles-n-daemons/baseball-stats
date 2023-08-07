@@ -2,14 +2,19 @@ import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import csvToObjects from './utils/csvToObjects.js';
+import Papa from 'papaparse';
 
 function App() {
     useEffect(() => {
         async function getData() {
             const response = await fetch('stats.csv');
-            const result = await response.text();
-            csvToObjects(result);
+            const reader = response.body.getReader()
+            const result = await reader.read() // raw array
+            const decoder = new TextDecoder('utf-8')
+            const csv = decoder.decode(result.value) // the csv text
+            const results = Papa.parse(csv, { header: true }) // object with { data, errors, meta }
+            const rows = results.data 
+            console.log(rows);
         }
         getData();
     });
