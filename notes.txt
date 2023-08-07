@@ -84,3 +84,20 @@ Seems like fetch somewhat works,
 Seems like this may take me a bit of time, I'll try to get started with it however
 
 31k additions in the first commit, thanks package-lock and stats.csv
+
+I'd like to add typescript, but I figure I should get something working first.
+
+First issue, looks like async identifiers aren't allowed by default. Going to see at minimum if I can load it from within the main app
+
+Citation for parsing CSVs
+
+Best option:
+
+https://code.google.com/archive/p/csv-to-array
+RFC4180 - compliant
+
+3:17
+
+Interestingly enough, if the csv parsing script is loaded, the rest of the application fails
+
+
