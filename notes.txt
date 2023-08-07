@@ -82,3 +82,5 @@ I'll try to load the csv from static data, going to probably search that since I
 Seems like fetch somewhat works, 
 
 Seems like this may take me a bit of time, I'll try to get started with it however
+
+31k additions in the first commit, thanks package-lock and stats.csv
