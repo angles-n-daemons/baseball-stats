@@ -1,0 +1,84 @@
+Starting the challenge project @ 2:31
+
+Document notes:
+
+Challenge for full-stack experience, feel free to dive in where you feel better
+
+Should take 2 hours to complete the assignment which contains three parts, each of which has a secondary option
+ 
+Part 1
+
+Download the baseball savant dataset, feel free to convert to JSON or move into a local database
+
+Would be asked how to productionize the app
+
+Question: Which app? It's not immediately clear from reading till this point
+
+Part 2
+
+Create a web application that visualizes and / or interacts with the data to compare players
+
+Can choose client / server setup or just a client which loads the json file
+
+The client application should display the data in a novel way
+
+The dataset is 3 years worth of batting data for MLB players. It contains their age, batting stats, and respective batting statistics for those years.
+
+I am guessing the stats look like:
+
+CREATE TABLE batting_statistics(
+	date TIMESTAMP,
+        player VARCHAR,
+        stat_1 DECIMAL,
+        expected_stat_1 DECIMAL,
+        stat_2 DECIMAL,
+        expected_stat_2 DECIMAL,
+)
+
+Tables and charts are preferred, but text is fine as well.
+
+If you have time, feel free to improve the look and feel using CSS.
+
+Part 3
+
+Please include a readme that includes
+
+Project name
+Project description
+Dependencies and installation
+How to run the app
+Open-source citations
+
+Finished reading @ 2:39
+
+After thinking for a moment, I'll see if it's easy to load the CSV into a SQLite database on the FE. If it's not, I'll load the CSV and: --pause--
+
+I think I'll actually look at the data first, and then try to figure out what I'd like the application to do
+
+Approach @ 2:43
+
+Okay I think for my approach I'll do the followwing. It'll be an app that gives a dropdown for a single player and renders charts showing the distribution of where other players fall and highlights where the selected player is.
+
+It'll be called MLB Player Stat Info, might come up with a better name as I move along.
+
+To do this I need to be able to:
+
+1. Run a simple web application
+2. Load the CSV from the BE
+3. Preload charts with a distribution
+4. Allow users to select a player from a typeahead
+5. When a user is selected it should be visible where they fall in the distribution
+
+If I have more time, I'll convert this data into a SQLite database and then build a back end around it.
+
+What's a word for something that gives information? Perhaps catalog
+
+npx create-react-app web
+
+Time at 2:50,
+
+I'll try to load the csv from static data, going to probably search that since I haven't done this in a while
+
+Seems like fetch somewhat works, 
+
+Seems like this may take me a bit of time, I'll try to get started with it however
